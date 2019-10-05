@@ -11,7 +11,6 @@ module top(
     .clk    (clk_div),
     .rst    (rst),
     .sw     (sw),
-    .btn    (btn),
     .led4_g    (led4_g),
     .led4_b    (led4_b),
     .led4_r    (led4_r),
