@@ -27,7 +27,6 @@
 
   create_clock是宣告master clock的週期(8ns)，create_generated_clock是以上面宣告的master clock為主要參考，並除以125000000做為新的使用頻率
 
-
 2. 承上題，若沒有加入這個 Constraint，可能會發生什麼事?
 
   Ans: 系統會找不到可以用的clk，可能會無法運作
