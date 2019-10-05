@@ -1,10 +1,8 @@
 module top(
     input   clk   ,
     input   rst   ,
-    input   [2:1]btn  ,
     input   [1:0] sw  ,
-    output  led4_g , led4_b , led4_r , led5_g , led5_b , led5_r,
-    output  [3:0] led
+    output  led4_g , led4_b , led4_r , led5_g , led5_b , led5_r
     );
     
     wire    clk_div ;
@@ -19,8 +17,7 @@ module top(
     .led4_r    (led4_r),
     .led5_g    (led5_g),
     .led5_b    (led5_b),
-    .led5_r    (led5_r),
-    .led       (led)
+    .led5_r    (led5_r)
     );
     
     divider div_0(
