@@ -22,6 +22,7 @@
 1. 為什麼要加入 blinky.xdc 這個 Constraint ?
 
   Ans:
+  
 2. 承上題，若沒有加入這個 Constraint，可能會發生什麼事?
 
   Ans:
