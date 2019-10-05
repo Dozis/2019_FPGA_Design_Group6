@@ -20,13 +20,14 @@
 
 ## Problem
 1. 為什麼要加入 blinky.xdc 這個 Constraint ?
-
-  Ans: 設定系統的運作頻率
+```
+  設定系統的運作頻率
   >create_clock -period 8.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports clk]
   >create_generated_clock -name clk_div -divide_by 125000000 -source [get_ports clk] [get_pins div_0/clk_div_reg/Q];
 
   create_clock是宣告master clock的週期(8ns)，create_generated_clock是以上面宣告的master clock為主要參考，並除以125000000做為新的使用頻率
-
+```
 2. 承上題，若沒有加入這個 Constraint，可能會發生什麼事?
-
-  Ans: 系統會找不到可以用的clk，可能會無法運作
+```
+  系統會找不到可以用的clk，可能會無法運作
+```
