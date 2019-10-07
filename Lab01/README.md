@@ -22,7 +22,7 @@
 ```
 2. 承上題，若沒有加入這個 Constraint，可能會發生什麼事?
 ```
-  系統會找不到可以用的clk，會使用預設的頻率
+  系統會找不到可以用的clk，會使用預設的頻率。以下是拿掉Constraint後出現的警告
 ```
 
 ![Warning_1](https://github.com/Dozis/2019_FPGA_Design_Group6/blob/master/Lab01/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202019-07-10%2012-48-39.png?raw=true)
