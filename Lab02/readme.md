@@ -14,4 +14,3 @@
 `Lab2_hw_BD`為Block Design的檔案，使用的IP為IP資料夾內的`HW2-1_PWM`和`Lab2_LED`。
 ### 第二題
 `src`為第二題所使用的.v檔，使用IP為IP資料夾的`HW2-2_LED`和`HW2-2_LEDPWM`。
-### Bonus
