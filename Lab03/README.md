@@ -73,9 +73,6 @@ int main() {
     xil_printf("%d",arr[i]);
     xil_printf("\n");
     }
-}
-
-
-	return 0;
+return 0;
 }
 ```
