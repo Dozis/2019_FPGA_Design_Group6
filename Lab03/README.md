@@ -6,8 +6,30 @@
 
 ## 問題描述
 ### Question
-* 請問在不改動任何設定下，ZYNQ CPU 儲存資料的方式是 big-endian 還是 little-endian?
+>請問在不改動任何設定下，ZYNQ CPU 儲存資料的方式是 big-endian 還是 little-endian?
 
+**Ans:** little-endian，參考資料來自[ZYNQ-7000的介紹說明書](http://xilinx.eetrend.com/files-eetrend-xilinx/download/201306/4164-8456-zynqqianrushiyingjiankaifa.pdf)。另外，也可以用C語言來判斷資料的儲存方式，範例如下:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    short int a = 0x1234;
+    char *p = (char *)&a;
+
+    printf("p=%#hhx\n",*p);
+
+    if(*p == 0x34)
+        printf("Little endian \n");
+    else if(*p == 0x12)
+        printf("Big endian \n");
+    else
+        printf("Unknow endian \n");
+
+    return 0;
+}
+```
 ### Problem
 1. 使用 PS 端控制一顆 RGB LED ，使其依序產生彩虹七色。
 2. 將組內每個人的學號透過 Hash Function 計算後 Print 在 Terminal 上。
