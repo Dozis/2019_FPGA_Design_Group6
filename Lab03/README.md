@@ -71,9 +71,6 @@ int main() {
     xil_printf("%d",arr[i]);
     xil_printf("\t\t");
     }
-}
-
-
-	return 0;
+return 0;
 }
 ```
