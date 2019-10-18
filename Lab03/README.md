@@ -1,4 +1,4 @@
-# FPGA_Homework_02
+# FPGA_Homework_03
 ## 成員名單
 * 陳宗琪 E24056302
 * 吳宇芯 E14043242
