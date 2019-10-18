@@ -30,6 +30,7 @@ int main(void)
     return 0;
 }
 ```
+
 ### Problem
 1. 使用 PS 端控制一顆 RGB LED ，使其依序產生彩虹七色。
 2. 將組內每個人的學號透過 Hash Function 計算後 Print 在 Terminal 上。
