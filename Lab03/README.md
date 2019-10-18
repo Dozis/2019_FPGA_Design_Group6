@@ -30,7 +30,7 @@ int main(void)
     return 0;
 }
 ```
-
+程式碼來源:[這裡](https://blog.xuite.net/tzeng015/twblog/113272930-%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%B7%E4%B8%80%E5%80%8B%E6%9D%BF%E5%AD%90%E7%9A%84cpu+%E6%98%AFbig-endian+%E9%82%84%E6%98%AF+Little%EF%BC%8Dendian%E7%9A%84)
 ### Problem
 1. 使用 PS 端控制一顆 RGB LED ，使其依序產生彩虹七色。
 2. 將組內每個人的學號透過 Hash Function 計算後 Print 在 Terminal 上。
