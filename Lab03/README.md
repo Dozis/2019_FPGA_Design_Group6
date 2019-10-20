@@ -51,7 +51,7 @@ int main() {
     //輸入20個數字,scanf會自動以Enter(\n)隔開各項輸入
     for(int input = 0; input < 20; ++input){
     	scanf("%d", &arr[input]);
-    	xil_printf("%d", &arr[input]);
+    	xil_printf("%d", arr[input]);
     	xil_printf("\n");
     }
     //全部輸入完後開始排序
