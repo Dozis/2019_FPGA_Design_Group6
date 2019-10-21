@@ -138,8 +138,10 @@ int main() {
 		xil_printf("Successfully ran Gpio Example\r\n");
 		return XST_SUCCESS;
 }
+```
 
 ### Problem2
+我們選擇使用的hash function簡單的把每個學號的字元的指標位置相加之後print出來
 ```c
 #include "xparameters.h"
 #include "xgpio.h"
