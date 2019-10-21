@@ -64,12 +64,12 @@ int main() {
 		xil_printf("Gpio Initialization Failed\r\n");
 		return XST_FAILURE;
 	}
-	
+
 	/* Set the direction for all signals as inputs except the LED output */
 	XGpio_SetDataDirection(&led4_r_gpio, 1, 0x00); // output
 	XGpio_SetDataDirection(&led4_g_gpio, 1, 0x00); // output
 	XGpio_SetDataDirection(&led4_b_gpio, 1, 0x00); // output
-	
+
 
 	while (1) {
 			/*Set the color change from red to purple*/
@@ -118,19 +118,19 @@ int main() {
 			}
 			/* Wait a small amount of time so the LED is visible */
 			for (int Delay = 0; Delay < LED_DELAY; Delay++);
-			
+
 			/*Use the code to simulate the PWM dimmer*/
 			for(int counter = 0; counter <25600; counter++){
 				if(counter < R_time_out) XGpio_DiscreteWrite(&led4_r_gpio, 1, 1);
 				else XGpio_DiscreteWrite(&led4_r_gpio, 1, 0);
-				
+
 				if(counter < G_time_out) XGpio_DiscreteWrite(&led4_g_gpio, 1, 1);
 				else XGpio_DiscreteWrite(&led4_g_gpio, 1, 0);
-				
+
 				if(counter < B_time_out) XGpio_DiscreteWrite(&led4_b_gpio, 1, 1);
 				else XGpio_DiscreteWrite(&led4_b_gpio, 1, 0);
 			}
-			
+
 			/* Wait a small amount of time so the LED is visible */
 			for (int Delay = 0; Delay < LED_DELAY; Delay++);
 		}
