@@ -1,0 +1,45 @@
+/*
+ * main.c
+ *
+ *  Created on: 2019¦~11¤ë5¤é
+ *      Author: godcurry
+ */
+
+
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xparameters.h"
+#include "pwm_test_ip.h"
+#include "sorting.h"
+#include "parity.h"
+#include "calculation_v1.h"
+#include "djb2.h"
+
+
+int main()
+{
+	u8 *Sorting_data,*AfterSort;
+	printf("Program Start.\n\r");
+//demo for sorting
+	printf("Demo for sorting.\n\r");
+	//get sorting data
+	printf("Please enter eight number.( < 16 )\n\r");
+	for (int i = 0;i < 8;i++){
+	scanf("%d",&Sorting_data[i]);
+	printf(" %d\r\n", Sorting_data[i]);
+	}
+	//sort data
+	sorting(XPAR_SORTING_0_S00_AXI_BASEADDR,Sorting_data,AfterSort);
+	//print result
+	for(int i = 0;i < 8;i++){
+		printf("%d",AfterSort);
+	}
+	printf("\n");
+
+//demo for calculation
+
+
+	printf("Program End.\n\r");
+    return 0;
+}

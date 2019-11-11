@@ -1,0 +1,169 @@
+/*
+ * main.c
+ *
+ *  Created on: 2019¦~11¤ë5¤é
+ *      Author: godcurry
+ */
+
+
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xparameters.h"
+#include "pwm_test_ip.h"
+#include "sorting.h"
+#include "parity.h"
+#include "calculation_v1.h"
+#include "djb2.h"
+#include "string.h"
+
+
+int main()
+{
+
+	printf("Program Start.\n\r");
+	char *end = "\rend";
+	char control_1[10];
+//demo for sorting
+	while(control_1 != end){
+	u8 *Sorting_data = 0,*AfterSort = 0;
+	printf("Demo for sorting.\n\r");
+	//get sorting data
+	printf("Please enter eight number.( < 16 )\n\r");
+	for (int i = 0;i < 8;i++){
+	scanf("%d",&Sorting_data[i]);
+	if(Sorting_data[i] > 15){
+		printf("Number should not larger than 15.\n\r");
+		Sorting_data[i] = 0;
+		i = i-1;
+	}
+	else{
+	printf(" %d\n\r", Sorting_data[i]);
+	}
+	}
+	//sort data
+	sorting(XPAR_SORTING_0_S00_AXI_BASEADDR,Sorting_data,AfterSort);
+	//print result
+	for(int i = 0;i < 8;i++){
+		printf("%d\n\r",AfterSort[i]);
+	}
+	printf("input any char to repeat this demo, or input end to go to next\n\r");
+	//fgets(control_1,5,stdin);
+	int x = strncmp(control_1,end,4);
+	printf("%d\n\r",x);
+	printf("%s\n\r",control_1);
+	//printf("%c\n\r%c\n\r%c\n\r",end[0],end[1],end[2]);
+	//int y = 0;
+	//printf("%d\n\r%d\n\r",control_1,end);
+	}
+
+//demo for calculation
+	printf("Demo for calculation.\n\r");
+	u8 first,second,operator;
+	u32 AfterOperate;
+	char operator_ch;
+	char *control_2;
+//run calculation
+	while(control_2 != "end"){
+		printf("please enter the operator(+,-,*)\n\r");
+		scanf("%c", &operator_ch);
+		if(operator_ch == "+")
+		{
+			printf("your operator is plus.\n\r");
+			operator = 1;
+			printf("please enter two number you want to add.\n\r");
+			scanf("%d", &first);
+			printf("%d\n",first);
+			scanf("%d", &second);
+			printf("%d\n",second);
+			AfterOperate = calculation(XPAR_CALCULATION_V1_0_S00_AXI_BASEADDR, second, first, operator);
+			printf("%d\n",AfterOperate);
+		}
+		else if (operator_ch == "*"){
+			printf("your operator is multiple.\n\r");
+			operator = 3;
+			printf("please enter two number you want to multiple.\n\r");
+			scanf("%d", &first);
+			printf("%d\n",first);
+			scanf("%d", &second);
+			printf("%d\n",second);
+			AfterOperate = calculation(XPAR_CALCULATION_V1_0_S00_AXI_BASEADDR, second, first, operator);
+			printf("%d\n",AfterOperate);
+		}
+		else if (operator_ch == "-"){
+			printf("your operator is subtract.\n\r");
+			operator = 2;
+			printf("please enter two number you want to subtract.\n\r");
+			scanf("%d", &first);
+			printf("%d\n",first);
+			scanf("%d", &second);
+			printf("%d\n",second);
+			AfterOperate = calculation(XPAR_CALCULATION_V1_0_S00_AXI_BASEADDR, second, first, operator);
+			printf("%d\n",AfterOperate);
+		}
+		else{
+			printf("please enter a correct operator.\n\r");
+		}
+
+		printf("input any char to repeat this demo, or input end to go to next\n\r");
+		fgets(control_2,5,stdin);
+		printf("%s\n\r",control_2);
+	}
+
+//demo for parity
+	u32 parity_data,AfterParity;
+	char *control_3;
+	printf("Demo for parity.\n\r");
+//run parity
+	while(control_3 != "end"){
+		printf("Please enter a number.\n\r");
+		scanf("%d", &parity_data);
+		printf("%d\n\r",parity_data);
+		AfterParity = parity(XPAR_PARITY_0_S00_AXI_BASEADDR, parity_data);
+		printf("parity of this number = %d\n\r", AfterParity);
+
+
+		printf("input any char to repeat this demo, or input end to go to next\n\r");
+		fgets(control_3,5,stdin);
+		printf("%s\n\r",control_3);
+	}
+//demo for djb2
+	char *hash_data;
+	u32 hash_result;
+	char *control_4;
+	printf("Demo for djb2.\n\r");
+//run djb2 hash
+	while(control_4 != "end"){
+		printf("Please enter a string you want to hash.\n\r");
+		fgets(hash_data,20,stdin);
+		printf("%s\n\r",hash_data);
+
+		hash_result = djb2(XPAR_DJB2_0_S00_AXI_BASEADDR, hash_data);
+		printf("djb2 hash result = %d\n\r",hash_result);
+
+		printf("input any char to repeat this demo, or input end to go to next\n\r");
+		fgets(control_4,5,stdin);
+		printf("%s\n\r",control_4);
+	}
+
+//demo for pwm controller
+	u32 R,G,B;
+	char *control_5;
+	printf("Demo for pwm controller.\n\r");
+	while(control_5 != "end"){
+		printf("Please enter your R,G,B:");
+		scanf("%d",&R);
+		printf("%d\n\r",R);
+		scanf("%d",&G);
+		printf("%d\n\r",G);
+		scanf("%d",&B);
+		printf("%d\n\r",B);
+		PWM(XPAR_PWM_TEST_IP_0_S00_AXI_BASEADDR,R,G,B);
+
+		printf("input any char to repeat this demo, or input end to go to next\n\r");
+		fgets(control_5,5,stdin);
+		printf("%s\n\r",control_5);
+	}
+	printf("Program End.\n\r");
+    return 0;
+}

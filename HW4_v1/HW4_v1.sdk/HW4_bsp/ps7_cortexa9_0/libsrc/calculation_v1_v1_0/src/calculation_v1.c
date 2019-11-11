@@ -1,0 +1,21 @@
+
+
+/***************************** Include Files *******************************/
+#include "calculation_v1.h"
+#include "stdio.h"
+
+/************************** Function Definitions ***************************/
+u32 calculation(UINTPTR baseAddr, u8 A, u8 B,u8 C){
+		u32 data = (C<<16) + (A<<8) + B;
+		u32 Sum;
+		CALCULATION_V1_mWriteReg(baseAddr, 0, data);
+		Sum = CALCULATION_V1_mReadReg (baseAddr, 4);
+		if (Sum > 65535)
+		{
+			(Sum) = (-1) * ((Sum-1) ^ 0x0001ffff);
+		}
+		return Sum;
+
+
+
+}
