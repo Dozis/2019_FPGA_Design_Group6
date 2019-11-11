@@ -48,5 +48,5 @@ Homework 4
 
 ### Block Diagram
 
-
+![bd](img/block_design.png)
 
