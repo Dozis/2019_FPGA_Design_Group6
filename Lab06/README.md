@@ -17,4 +17,4 @@ Homework 6
 
 ###block design
 
-![block_design](img/parallels.png)
+![block_design](img/blockdesign.png)
