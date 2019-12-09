@@ -15,6 +15,6 @@ Homework 6
 
 處理4bit整數convolution
 
-###block design
+### block design
 
 ![block_design](img/blockdesign.png)
