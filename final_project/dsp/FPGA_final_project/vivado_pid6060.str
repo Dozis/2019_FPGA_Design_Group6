@@ -1,0 +1,223 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 6060
+License: Customer
+
+Current time: 	Sat Jan 04 15:23:34 CST 2020
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1228x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 196 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	godcurry
+User home directory: C:/Users/godcurry
+User working directory: C:/Users/godcurry/Desktop/FPGA_final_project
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/godcurry/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/godcurry/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/godcurry/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/godcurry/Desktop/FPGA_final_project/vivado.log
+Vivado journal file location: 	C:/Users/godcurry/Desktop/FPGA_final_project/vivado.jou
+Engine tmp dir: 	C:/Users/godcurry/Desktop/FPGA_final_project/.Xil/Vivado-6060-C309
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 545 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data. Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 41 MB. Current time: 1/4/20, 3:23:36 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// bx (cp):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_THIS_PROJECT_WILL_BE_OPENED_IN_READ_ONLY_OK", "OK"); // JButton (C, I)
+// Opening Vivado Project: C:\Users\godcurry\Desktop\FPGA_final_project\FPGA_final_project.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/godcurry/Desktop/FPGA_final_project/FPGA_final_project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 577 MB. GUI used memory: 41 MB. Current time: 1/4/20, 3:23:51 PM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+91972kb) [00:00:32]
+// [Engine Memory]: 613 MB (+491166kb) [00:00:32]
+// [GUI Memory]: 103 MB (+8882kb) [00:00:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  4049 ms.
+// Tcl Message: open_project C:/Users/godcurry/Desktop/FPGA_final_project/FPGA_final_project.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/vx210/FPGA_final_project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 653.934 ; gain = 75.309 
+// Project name: FPGA_final_project; location: C:/Users/godcurry/Desktop/FPGA_final_project; part: xc7z020clg400-1
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/godcurry/Desktop/FPGA_final_project/FPGA_final_project.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:xbip_dsp48_macro:3.0 - xbip_dsp48_macro_0 Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// Tcl Message: Adding cell -- xilinx.com:user:DSP_AXI_wrapper:1.0 - DSP_AXI_wrapper_0 Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 650 MB (+6790kb) [00:00:40]
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Successfully read diagram <design_1> from BD file <C:/Users/godcurry/Desktop/FPGA_final_project/FPGA_final_project.srcs/sources_1/bd/design_1/design_1.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 709 MB. GUI used memory: 48 MB. Current time: 1/4/20, 3:24:06 PM CST
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 738 MB (+58488kb) [00:00:48]
+// WARNING: HEventQueue.dispatchEvent() is taking  2636 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 749.141 ; gain = 88.758 
+// 'bA' command handler elapsed time: 11 seconds
+dismissDialog("Open Block Design"); // bx (cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (aF, cp)
+// a (cp): Critical Messages: addNotify
+// y (cp): Project is Read-Only: addNotify
+// [Engine Memory]: 777 MB (+2257kb) [00:00:54]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceOtoP.Project_SAVE_PROJECT_AS, "Save Project As..."); // a (y)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aE (cp): Save Project As: addNotify
+dismissDialog("Project is Read-Only"); // y (cp)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, aE)
+// Elapsed time: 17 seconds
+setFolderChooser("C:/Users/godcurry");
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "final"); // Y (Q, aE)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'o' command handler elapsed time: 24 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aE (cp)
+dismissDialog("Critical Messages"); // a (cp)
+// bx (cp):  Save Project As : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_project_as final C:/Users/godcurry/final -force 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: Wrote  : <C:/Users/godcurry/final/final.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 109 MB (+641kb) [00:01:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 815 MB. GUI used memory: 52 MB. Current time: 1/4/20, 3:24:51 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_RENAME
+// Tcl Message: save_project_as: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 813.391 ; gain = 29.992 
+// bx (cp):  Save Constraints : addNotify
+// [Engine Memory]: 817 MB (+613kb) [00:01:32]
+// Elapsed time: 10 seconds
+dismissDialog("Save Constraints"); // bx (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BD_TCL, "Export Block Design..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BD_TCL
+// bx (cp): Export Block Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bx)
+// Tcl Command: 'write_bd_tcl -force C:/Users/godcurry/final/design_1.tcl'
+dismissDialog("Export Block Design"); // bx (cp)
+// Tcl Message: write_bd_tcl -force C:/Users/godcurry/final/design_1.tcl 
+// Tcl Message: INFO: [BD 5-148] Tcl file written out <C:/Users/godcurry/final/design_1.tcl>.  
+// Elapsed time: 31 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
